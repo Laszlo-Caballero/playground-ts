@@ -75,10 +75,6 @@ function render(entries: Entry[]) {
   if (cur && !cur.isDir) {
     const preview = getPreview(cur.name);
     console.log("\n\x1b[90m" + "─".repeat(50) + "\x1b[0m");
-    console.log("\x1b[33m📄 Vista previa:\x1b[0m");
-    console.log(
-      "\x1b[90m" + preview.split("\n").slice(0, 10).join("\n") + "\x1b[0m",
-    );
   } else {
     console.log("\n\x1b[90m" + "─".repeat(50) + "\x1b[0m");
   }
